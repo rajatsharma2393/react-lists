@@ -17,14 +17,12 @@ class ListElement extends Component {
     const rowStyles = [styles.row];
 
     return (
-      <TouchableOpacity onPress={this.onRemove}>
-        <Animated.View style={rowStyles}>
-          <View>
-            <Text style={styles.name}>{name}</Text>
-            <Text style={styles.email}>{email}</Text>
-          </View>
-        </Animated.View>
-      </TouchableOpacity>
+      <Animated.View style={rowStyles}>
+        <View>
+          <Text style={styles.name}>{name}</Text>
+          <Text style={styles.email}>{email}</Text>
+        </View>
+      </Animated.View>
     );
   }
 }
